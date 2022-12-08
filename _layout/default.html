@@ -10,6 +10,7 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
       </header>
       <section>
+        <img src="{{site.logo | relative_url}}" alt="Logo" />
       {{ content }}
       </section>
       <footer>
