@@ -1,5 +1,5 @@
 ---
-title: test Documentation
+title: test documentation
 permalink: /
 ---
 test
