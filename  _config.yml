@@ -18,14 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ARMS documentation
+title: test documentation
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 # theme: minima
 
 highlighter: rouge
-baseurl: /pages/arms/docs
 
 collections:
   ecs:
@@ -60,6 +59,3 @@ defaults:
       output: true
       sort_by: name
       sort_order: 9 # by default all pages sink to the bottom
-
-exclude:
-  - .plugins
