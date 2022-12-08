@@ -1,5 +1,5 @@
 # Base configuration
-exclude: ["README.md", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "changelog.md"]
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -10,9 +10,22 @@ collections:
     permalink: /:path/
 
 # Title
-name: Doc Template
+name: DCgov Guides Template
 
-logourl: /assets/img/logo.png
+# Author/Organization info to be displayed in the templates
+author:
+  name: Office of the Chief Technology Officer
+  url: http://octo.dc.gov
+
+# When using this template with a project (repository) page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+baseurl: '/guides-template'
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: /assets/img/dc_logo.png
+logoalt: The D.C. flag
 
 # Navigation
 # List links that should appear in the site sidebar here
@@ -39,8 +52,10 @@ navigation:
 # List repos that you would like to appear on the homepage here
 repos:
 - name: guides-template
-  description:
+  description: 
   url: https://github.com/DCgov/guides-template
+
+google_analytics_ua: 
 
 # Style Variables
 brand_color: "#DA253B"
