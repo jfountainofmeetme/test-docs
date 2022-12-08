@@ -5,3 +5,5 @@ highlighter: rouge
 permalink: pretty
 
 title: Documentation Template
+
+sidebar: true
