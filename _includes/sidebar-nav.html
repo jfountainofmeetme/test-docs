@@ -1,0 +1,25 @@
+<!--
+    sidebar-nav.html: {{ include.docs.size }} docs
+-->
+{%- assign doc_names = include.docs | sort: "sort_order" | map: "name" | uniq -%}
+{%- for doc_name in doc_names -%}
+    {%- assign doc = include.docs | where: "name", doc_name | first -%}
+    {%- assign children = include.collection.docs | where: "parent", doc.name -%}
+    <li>
+        <span class="icon-text">
+            {%- if children.size > 0 %}
+            <a href="javascript:void(0)" onclick="navToggleNode(event.target.closest('li'))">
+                <span class="icon"><i class="fas fa-angle-right">&nbsp;</i></span>
+            </a>
+            {% else %}
+            <a>
+                <span class="icon"><i class="fas">&nbsp;</i></span>
+            </a>
+            {% endif %}
+            <a href="{{ doc.link | default: doc.url | relative_url }}"><span class="is-capitalized">{{ doc.title | default: doc.name }}</span></a>
+        </span>
+        <ul style="display: none;">
+            {% include sidebar-nav.html collection=include.collection docs=children %}
+        </ul>
+    </li>
+{%- endfor -%}
