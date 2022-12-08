@@ -4,4 +4,4 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-title: test documentation
+title: Documentation Template
