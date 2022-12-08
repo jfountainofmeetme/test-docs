@@ -1,16 +1,46 @@
 # Base configuration
-exclude: ["README.md", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "changelog.md"]
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-title: Documentation Template
-logo: /assets/img/logo.png
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
+# Title
+name: Doc Template
 
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+logourl: /assets/img/logo.png
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Introduction
+  internal: true
+  url: ./
+- text: Add a new page
+  internal: true
+  url: add-a-new-page
+- text: Configure the Guide
+  internal: true
+  url: configure-the-guide
+- text: GitHub Setup
+  internal: true
+  url: github
+- text: Create a Glossary
+  glossary: true
+- text: Edit this Repo
+  internal: false
+  url: https://github.com/DCgov/guides-template
+
+# Repo list
+# List repos that you would like to appear on the homepage here
+repos:
+- name: guides-template
+  description:
+  url: https://github.com/DCgov/guides-template
+
+# Style Variables
+brand_color: "#DA253B"
