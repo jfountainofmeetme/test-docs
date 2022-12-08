@@ -3,6 +3,7 @@ exclude: ["README.md", "changelog.md"]
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+logo: /assets/img/logo.png
 
 title: Documentation Template
 
