@@ -1,5 +1,5 @@
 ---
-title: test documentation
+title: Documentation Template
 permalink: /
 ---
-test
+Template for all the things
