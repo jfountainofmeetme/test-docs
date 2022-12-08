@@ -1,1 +1,7 @@
+# Base configuration
+exclude: ["README.md", "changelog.md"]
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
 title: test documentation
