@@ -5,5 +5,5 @@ plugins:
 - jekyll-remote-theme
 - jekyll-include-cache
 
-title: Documentation Template
+title: Terragrunt - A to Z
 email: jfountain@themeetgroup.com
