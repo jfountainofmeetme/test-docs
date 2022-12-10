@@ -4,8 +4,7 @@ plugins:
 
 title: Documentation Template
 email: jfountain@themeetgroup.com
-
-sidebar: true
+remote_theme: minimal-mistakes-jekyll
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false
