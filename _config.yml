@@ -3,6 +3,7 @@ remote_theme:  mmistakes/minimal-mistakes@4.24.0
 logo: /assets/img/logo.png
 plugins:
 - jekyll-remote-theme
+- jekyll-include-cache
 
 title: Documentation Template
 email: jfountain@themeetgroup.com
