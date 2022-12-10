@@ -6,6 +6,11 @@ title: Documentation Template
 email: jfountain@themeetgroup.com
 remote_theme:  mmistakes/minimal-mistakes@4.24.0
 
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
+
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false
 
