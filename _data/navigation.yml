@@ -1,7 +1,0 @@
-docs:
-  - title: Current Projects
-    children:
-      - title: "RabbitMQ"
-        url: /docs/rabbitmq/
-      - title: "Kafka"
-        url: /docs/kafka/

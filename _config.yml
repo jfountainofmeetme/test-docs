@@ -1,24 +1,13 @@
+remote_theme:  mmistakes/minimal-mistakes@4.24.0
+
 logo: /assets/img/logo.png
 plugins:
 - jekyll-remote-theme
 
 title: Documentation Template
 email: jfountain@themeetgroup.com
-remote_theme:  mmistakes/minimal-mistakes@4.24.0
 
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
-
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: false
-
-defaults:
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
